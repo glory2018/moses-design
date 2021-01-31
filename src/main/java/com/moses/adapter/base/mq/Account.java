@@ -1,5 +1,6 @@
 package com.moses.adapter.base.mq;
 
+import com.alibaba.fastjson.JSON;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,4 +16,9 @@ public class Account {
     private String address;     // 开户地
     private Date accountDate;   // 开户时间
     private String desc;        // 开户描述
+
+    @Override
+    public String toString() {
+        return JSON.toJSONString(this);
+    }
 }

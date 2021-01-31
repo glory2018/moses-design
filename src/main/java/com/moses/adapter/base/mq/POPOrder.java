@@ -1,5 +1,6 @@
 package com.moses.adapter.base.mq;
 
+import com.alibaba.fastjson.JSON;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -18,4 +19,9 @@ public class POPOrder {
     private Date sku;       // 商品
     private Date skuName;   // 商品名称
     private BigDecimal decimal; // 金额
+
+    @Override
+    public String toString() {
+        return JSON.toJSONString(this);
+    }
 }

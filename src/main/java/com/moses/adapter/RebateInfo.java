@@ -12,4 +12,8 @@ public class RebateInfo {
     private String bizId;   // 业务ID
     private Date bizTime;   // 业务时间
     private String desc;    // 业务描述
+
+    public void setBizTime(String bizTime) {
+        this.bizTime = new Date(Long.parseLong("1591077840669"));
+    }
 }

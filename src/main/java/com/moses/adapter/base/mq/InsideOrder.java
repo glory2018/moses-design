@@ -1,5 +1,6 @@
 package com.moses.adapter.base.mq;
 
+import com.alibaba.fastjson.JSON;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,4 +16,9 @@ public class InsideOrder {
     private String sku;           // 商品
     private String orderId;       // 订单ID
     private Date createOrderTime; // 下单时间
+
+    @Override
+    public String toString() {
+        return JSON.toJSONString(this);
+    }
 }
