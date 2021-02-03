@@ -18,6 +18,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * api测试
+ *
+ * @author Moses
+ * @date 2021/02/03
+ */
 public class ApiTest {
     private Logger logger = LoggerFactory.getLogger(ApiTest.class);
     private TreeRich treeRich;
@@ -139,6 +145,7 @@ public class ApiTest {
     @Test
     public void test_tree() {
         logger.info("决策树组合结构信息：\r\n" + JSON.toJSONString(treeRich));
+//        logger.info(JsonUtil.responseFormat(JSON.toJSONString(treeRich)));
         IEngine treeEngineHandle = new TreeEngineHandle();
         Map<String, String> decisionMatter = new HashMap<>();
         decisionMatter.put("gender", "man");

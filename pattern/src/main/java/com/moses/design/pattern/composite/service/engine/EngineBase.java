@@ -11,9 +11,7 @@ import org.slf4j.LoggerFactory;
 import java.util.Map;
 
 /**
- * 微信公众号：bugstack虫洞栈 | 专注原创技术专题案例
- * 论坛：http://bugstack.cn
- * Create by 小傅哥 on @2020
+ *
  */
 public abstract class EngineBase extends EngineConfig implements IEngine {
     private Logger logger = LoggerFactory.getLogger(EngineBase.class);
@@ -27,7 +25,7 @@ public abstract class EngineBase extends EngineConfig implements IEngine {
         // 规则树根ID
         Long rootNodeId = treeRoot.getTreeRootNodeId();
         TreeNode treeNodeInfo = treeNodeMap.get(rootNodeId);
-        //节点类型[NodeType]；1子叶、2果实
+        //节点类型[NodeType]；1枝叶、2果实
         while (treeNodeInfo.getNodeType().equals(1)) {
             String ruleKey = treeNodeInfo.getRuleKey();
             LogicFilter logicFilter = logicFilterMap.get(ruleKey);

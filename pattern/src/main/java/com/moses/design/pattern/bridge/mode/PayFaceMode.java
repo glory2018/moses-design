@@ -4,7 +4,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * 面部识别支付方式
+ * 面部识别支付模式
+ *
+ * @author Moses
+ * @date 2021/02/03
  */
 public class PayFaceMode implements IPayMode {
     protected Logger logger = LoggerFactory.getLogger(PayCypherMode.class);

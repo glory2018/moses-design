@@ -5,6 +5,10 @@ import com.moses.design.pattern.factory.simple.store.impl.CardCommodityService;
 import com.moses.design.pattern.factory.simple.store.impl.CouponCommodityService;
 import com.moses.design.pattern.factory.simple.store.impl.GoodsCommodityService;
 
+/**
+ * @author Moses
+ * @date 2021/2/1
+ */
 public class StoreFactory {
     public ICommodity getCommodityService(Integer commodityType) {
         if (null == commodityType) {
@@ -12,11 +16,9 @@ public class StoreFactory {
         }
         if (1 == commodityType) {
             return new CouponCommodityService();
-        }
-        if (2 == commodityType) {
+        } else if (2 == commodityType) {
             return new GoodsCommodityService();
-        }
-        if (3 == commodityType) {
+        } else if (3 == commodityType) {
             return new CardCommodityService();
         }
         throw new RuntimeException("不存在的商品服务类型");

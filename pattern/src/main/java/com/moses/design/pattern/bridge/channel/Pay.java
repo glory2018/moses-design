@@ -6,6 +6,12 @@ import org.slf4j.LoggerFactory;
 
 import java.math.BigDecimal;
 
+/**
+ * 支付
+ *
+ * @author Moses
+ * @date 2021/02/03
+ */
 public abstract class Pay {
     protected Logger logger = LoggerFactory.getLogger(Pay.class);
     protected IPayMode payMode;

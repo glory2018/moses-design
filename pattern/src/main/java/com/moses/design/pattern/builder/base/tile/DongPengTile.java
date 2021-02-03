@@ -5,8 +5,12 @@ import com.moses.design.pattern.builder.base.Matter;
 import java.math.BigDecimal;
 
 /**
+ * 东鹏瓷砖
  * 地砖
  * 品牌：东鹏瓷砖
+ *
+ * @author Moses
+ * @date 2021/02/03
  */
 public class DongPengTile implements Matter {
     @Override

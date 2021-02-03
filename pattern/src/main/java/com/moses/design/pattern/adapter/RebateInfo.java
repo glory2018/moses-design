@@ -5,6 +5,12 @@ import lombok.Setter;
 
 import java.util.Date;
 
+/**
+ * 退税信息
+ *
+ * @author Moses
+ * @date 2021/02/03
+ */
 @Setter
 @Getter
 public class RebateInfo {

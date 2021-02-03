@@ -4,6 +4,12 @@ import com.moses.design.pattern.bridge.mode.IPayMode;
 
 import java.math.BigDecimal;
 
+/**
+ * 微信支付
+ *
+ * @author Moses
+ * @date 2021/02/03
+ */
 public class WxPay extends Pay {
     public WxPay(IPayMode payMode) {
         super(payMode);

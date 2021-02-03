@@ -1,5 +1,6 @@
-package com.moses.design.pattern.builder;
+package com.moses.design.pattern.builder.impl;
 
+import com.moses.design.pattern.builder.IMenu;
 import com.moses.design.pattern.builder.base.Matter;
 
 import java.math.BigDecimal;
@@ -8,6 +9,9 @@ import java.util.List;
 
 /**
  * 装修包
+ *
+ * @author Moses
+ * @date 2021/02/03
  */
 public class DecorationPackageMenu implements IMenu {
     private List<Matter> list = new ArrayList<Matter>();  // 装修清单

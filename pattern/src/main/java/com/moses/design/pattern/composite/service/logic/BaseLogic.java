@@ -6,9 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 微信公众号：bugstack虫洞栈 | 专注原创技术专题案例
- * 论坛：http://bugstack.cn
- * Create by 小傅哥 on @2020
+ *
  */
 public abstract class BaseLogic implements LogicFilter {
     @Override
@@ -22,6 +20,13 @@ public abstract class BaseLogic implements LogicFilter {
     @Override
     public abstract String matterValue(Long treeId, String userId, Map<String, String> decisionMatter);
 
+    /**
+     * 决策逻辑
+     *
+     * @param matterValue 物质价值
+     * @param nodeLink    节点链接
+     * @return boolean 1、2、3、4、5 ， 等于、⼩于、⼤于、⼩于等于、⼤于等于
+     */
     private boolean decisionLogic(String matterValue, TreeNodeLink nodeLink) {
         switch (nodeLink.getRuleLimitType()) {
             case 1:

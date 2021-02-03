@@ -9,6 +9,12 @@ import org.slf4j.LoggerFactory;
 
 import java.util.Map;
 
+/**
+ * 优惠券
+ *
+ * @author Moses
+ * @date 2021/2/1
+ */
 public class CouponCommodityService implements ICommodity {
     private Logger logger = LoggerFactory.getLogger(CouponCommodityService.class);
     private CouponService couponService = new CouponService();

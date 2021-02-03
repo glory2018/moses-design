@@ -1,0 +1,55 @@
+{
+  "treeRoot": {
+    "treeName": "规则决策树",
+    "treeRootNodeId": 1
+  },
+  "treeNodeMap": {
+    1: {
+      "treeNodeId": 1,
+      "ruleDesc": "用户性别[男/女]",
+      "ruleKey": "userGender",
+      "treeNodeLinkList": [
+        {
+          "treeNodeId": 11,
+          "gender": "man",
+          "nodeType": "枝叶",
+          "treeNodeLinkList": [
+            {
+              "treeNodeId": 111,
+              "nodeType": "果实",
+              "nodeValue": "果实A",
+              "age": "<25"
+            },
+            {
+              "treeNodeId": 112,
+              "nodeType": "果实",
+              "nodeValue": "果实B",
+              "age": ">=25"
+            }
+          ]
+        },
+        {
+          "treeNodeId": 12,
+          "gender": "woman",
+          "nodeType": "枝叶",
+          "treeNodeLinkList": [
+            {
+              "treeNodeId": 121,
+              "nodeType": "果实",
+              "nodeValue": "果实C",
+              "ruleLimitType": 3,
+              "ruleLimitValue": "25"
+            },
+            {
+              "treeNodeId": 122,
+              "nodeType": "果实",
+              "nodeValue": "果实D",
+              "ruleLimitType": 5,
+              "ruleLimitValue": "25"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

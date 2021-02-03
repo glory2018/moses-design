@@ -4,7 +4,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * 指纹识别支付方式
+ * 指纹支付模式
+ *
+ * @author Moses
+ * @date 2021/02/03
  */
 public class PayFingerprintMode implements IPayMode {
     protected Logger logger = LoggerFactory.getLogger(PayCypherMode.class);

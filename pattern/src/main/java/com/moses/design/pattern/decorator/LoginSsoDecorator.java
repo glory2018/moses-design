@@ -7,6 +7,12 @@ import org.slf4j.LoggerFactory;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * 登录sso装饰器
+ *
+ * @author Moses
+ * @date 2021/02/03
+ */
 public class LoginSsoDecorator extends SsoDecorator {
     private Logger logger = LoggerFactory.getLogger(LoginSsoDecorator.class);
     private static Map<String, String> authMap = new ConcurrentHashMap<String, String>();

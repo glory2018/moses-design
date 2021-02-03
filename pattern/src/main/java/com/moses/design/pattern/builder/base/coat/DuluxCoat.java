@@ -5,8 +5,12 @@ import com.moses.design.pattern.builder.base.Matter;
 import java.math.BigDecimal;
 
 /**
+ * 多乐士的外套
  * 涂料
  * 品牌；多乐士(Dulux)
+ *
+ * @author Moses
+ * @date 2021/02/03
  */
 public class DuluxCoat implements Matter {
     @Override

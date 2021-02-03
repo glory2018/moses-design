@@ -2,6 +2,12 @@ package com.moses.design.pattern.builder;
 
 import com.moses.design.pattern.builder.base.Matter;
 
+/**
+ * 菜单
+ *
+ * @author Moses
+ * @date 2021/02/03
+ */
 public interface IMenu {
     /**
      * 吊顶

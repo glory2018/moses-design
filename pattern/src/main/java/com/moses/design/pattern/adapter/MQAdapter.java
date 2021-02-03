@@ -5,6 +5,12 @@ import com.alibaba.fastjson.JSON;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Map;
 
+/**
+ * MQ适配器
+ *
+ * @author Moses
+ * @date 2021/02/03
+ */
 public class MQAdapter {
     public static RebateInfo filter(String strJson, Map<String, String> link) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
         return filter(JSON.parseObject(strJson, Map.class), link);

@@ -22,7 +22,6 @@ import java.lang.reflect.Method;
  * 切面定义
  * 公众号：bugstack虫洞栈 | 沉淀、分享、成长，让自己和他人都能有所收获！
  * 博  客：http://bugstack.cn
- * Create by 小傅哥 on @2020
  */
 @Aspect
 @Component
@@ -42,7 +41,7 @@ public class DoJoinPoint {
         DoDoor door = method.getAnnotation(DoDoor.class);
         //获取字段值
         String keyValue = getFiledValue(door.key(), jp.getArgs());
-        logger.info("itstack door handler method：{} value：{}", method.getName(), keyValue);
+        logger.info("moses door handler method：{} value：{}", method.getName(), keyValue);
         if (null == keyValue || "".equals(keyValue)) {
             return jp.proceed();
         }

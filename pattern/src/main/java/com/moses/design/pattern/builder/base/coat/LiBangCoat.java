@@ -5,8 +5,12 @@ import com.moses.design.pattern.builder.base.Matter;
 import java.math.BigDecimal;
 
 /**
+ * 李爆炸外套
  * 涂料
  * 品牌；立邦
+ *
+ * @author Moses
+ * @date 2021/02/03
  */
 public class LiBangCoat implements Matter {
     @Override

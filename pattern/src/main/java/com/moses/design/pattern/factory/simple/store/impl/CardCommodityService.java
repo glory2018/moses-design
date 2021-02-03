@@ -8,6 +8,12 @@ import org.slf4j.LoggerFactory;
 
 import java.util.Map;
 
+/**
+ * 爱奇艺兑换卡
+ *
+ * @author Moses
+ * @date 2021/2/1
+ */
 public class CardCommodityService implements ICommodity {
     private Logger logger = LoggerFactory.getLogger(CardCommodityService.class);
     // 模拟注入

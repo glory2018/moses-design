@@ -1,10 +1,6 @@
 package com.moses.design.pattern.command.cuisine;
 
 /**
- * 博客：https://bugstack.cn - 沉淀、分享、成长，让自己和他人都能有所收获！
- * 公众号：bugstack虫洞栈
- * Create by 小傅哥(fustack) @2020
- * <p>
  * 菜系
  * 01、山东（鲁菜）——宫廷最大菜系，以孔府风味为龙头。
  * 02、四川（川菜）——中国最有特色的菜系，也是民间最大菜系。

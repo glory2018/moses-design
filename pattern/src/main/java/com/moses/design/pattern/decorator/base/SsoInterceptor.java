@@ -1,5 +1,11 @@
 package com.moses.design.pattern.decorator.base;
 
+/**
+ * sso拦截器
+ *
+ * @author Moses
+ * @date 2021/02/03
+ */
 public class SsoInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(String request, String response, Object handler) {

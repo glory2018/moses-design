@@ -5,8 +5,12 @@ import com.moses.design.pattern.builder.base.Matter;
 import java.math.BigDecimal;
 
 /**
+ * 盛香楼
  * 地板
  * 品牌：圣象
+ *
+ * @author Moses
+ * @date 2021/02/03
  */
 public class ShengXiangFloor implements Matter {
     @Override

@@ -19,7 +19,7 @@ public class Singleton_06 {
     }
 
     public static void main(String[] args) {
-        System.out.println(Singleton_06.getInstance()); // org.itstack.demo.design.Singleton_06@2b193f2d
-        System.out.println(Singleton_06.getInstance()); // org.itstack.demo.design.Singleton_06@2b193f2d
+        System.out.println(Singleton_06.getInstance()); // org.moses.demo.design.Singleton_06@2b193f2d
+        System.out.println(Singleton_06.getInstance()); // org.moses.demo.design.Singleton_06@2b193f2d
     }
 }

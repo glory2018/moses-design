@@ -9,9 +9,9 @@ import java.util.Map;
 
 /**
  * 规则树聚合
- * 微信公众号：bugstack虫洞栈 | 专注原创技术专题案例
- * 论坛：http://bugstack.cn
- * Create by 付政委 on @2019
+ *
+ * @author Moses
+ * @date 2021/02/03
  */
 @Getter
 @Setter

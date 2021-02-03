@@ -25,7 +25,7 @@ public class ApiTest {
             SqlSessionFactory sqlMapper = new SqlSessionFactoryBuilder().build(reader);
             SqlSession session = sqlMapper.openSession();
             try {
-                User user = session.selectOne("org.itstack.demo.design.dao.IUserDao.queryUserInfoById", 1L);
+                User user = session.selectOne("org.moses.demo.design.dao.IUserDao.queryUserInfoById", 1L);
                 logger.info("测试结果：{}", JSON.toJSONString(user));
             } finally {
                 session.close();
@@ -47,7 +47,7 @@ public class ApiTest {
             try {
                 User req = new User();
                 req.setAge(18);
-                List<User> userList = session.selectList("org.itstack.demo.design.dao.IUserDao.queryUserList", req);
+                List<User> userList = session.selectList("org.moses.demo.design.dao.IUserDao.queryUserList", req);
                 logger.info("测试结果：{}", JSON.toJSONString(userList));
             } finally {
                 session.close();

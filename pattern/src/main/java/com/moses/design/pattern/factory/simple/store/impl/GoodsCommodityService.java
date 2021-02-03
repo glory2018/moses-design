@@ -9,6 +9,12 @@ import org.slf4j.LoggerFactory;
 
 import java.util.Map;
 
+/**
+ * 实物商品
+ *
+ * @author Moses
+ * @date 2021/2/1
+ */
 public class GoodsCommodityService implements ICommodity {
     private Logger logger = LoggerFactory.getLogger(GoodsCommodityService.class);
     private GoodsService goodsService = new GoodsService();

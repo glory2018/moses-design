@@ -9,10 +9,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * 切面定义
- * 公众号：bugstack虫洞栈 | 沉淀、分享、成长，让自己和他人都能有所收获！
- * 博  客：http://bugstack.cn
- * Create by 小傅哥 on @2020
+ * @author fanshaorong
+ * @date 2021/02/03
  */
 @Configuration
 @ConditionalOnClass(StarterService.class)
@@ -21,10 +19,19 @@ public class StarterAutoConfigure {
     @Autowired
     private StarterServiceProperties properties;
 
+    /**
+     * 获取服务
+     * prefix 节点前缀
+     * value 属性值
+     * havingValue 目标值
+     * 属性值不为空，与havingValue指定的值一致则生效
+     *
+     * @return {@link StarterService}
+     */
     @Bean
     @ConditionalOnMissingBean
     @ConditionalOnProperty(prefix = "itstack.door", value = "enabled", havingValue = "true")
-    StarterService starterService() {
+    StarterService getService() {
         return new StarterService(properties.getUserStr());
     }
 }

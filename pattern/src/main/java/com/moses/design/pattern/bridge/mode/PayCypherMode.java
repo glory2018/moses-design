@@ -4,7 +4,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * 密码支付方式
+ * 支付密码模式
+ *
+ * @author Moses
+ * @date 2021/02/03
  */
 public class PayCypherMode implements IPayMode {
     protected Logger logger = LoggerFactory.getLogger(PayCypherMode.class);

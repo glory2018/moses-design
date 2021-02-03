@@ -4,6 +4,12 @@ import com.moses.design.pattern.bridge.mode.IPayMode;
 
 import java.math.BigDecimal;
 
+/**
+ * 支付宝支付
+ *
+ * @author Moses
+ * @date 2021/02/03
+ */
 public class ZfbPay extends Pay {
     public ZfbPay(IPayMode payMode) {
         super(payMode);
