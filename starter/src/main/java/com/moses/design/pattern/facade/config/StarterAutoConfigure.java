@@ -30,7 +30,7 @@ public class StarterAutoConfigure {
      */
     @Bean
     @ConditionalOnMissingBean
-    @ConditionalOnProperty(prefix = "itstack.door", value = "enabled", havingValue = "true")
+    @ConditionalOnProperty(prefix = "moses.door", name = "enabled", havingValue = "true")
     StarterService getService() {
         return new StarterService(properties.getUserStr());
     }

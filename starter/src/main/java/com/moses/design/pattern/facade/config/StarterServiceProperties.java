@@ -12,7 +12,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  */
 @Setter
 @Getter
-@ConfigurationProperties("itstack.door")
+@ConfigurationProperties("moses.door")
 public class StarterServiceProperties {
     private String userStr;
 }

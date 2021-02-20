@@ -1,6 +1,7 @@
 package com.moses.design.pattern.responsibility.base;
 
-import java.util.Date;
+import com.moses.design.pattern.responsibility.AuthInfo;
+
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -10,13 +11,25 @@ import java.util.concurrent.ConcurrentHashMap;
  * 2. queryAuthInfo 查询审核信息(时间)
  */
 public class AuthService {
-    private static Map<String, Date> authMap = new ConcurrentHashMap<String, Date>();
+    private static Map<String, AuthInfo> authMap = new ConcurrentHashMap<String, AuthInfo>();
 
-    public static Date queryAuthInfo(String uId, String orderId) {
-        return authMap.get(uId.concat(orderId));
+    /**
+     * 添加认证信息
+     *
+     * @param uId      你的id
+     * @param authInfo 审批信息
+     */
+    public static void auth(String uId, AuthInfo authInfo) {
+        authMap.put(uId, authInfo);
     }
 
-    public static void auth(String uId, String orderId) {
-        authMap.put(uId.concat(orderId), new Date());
+    /**
+     * 查询认证信息
+     *
+     * @param uId 用户id
+     * @return {@link AuthInfo}
+     */
+    public static AuthInfo queryAuthInfo(String uId) {
+        return authMap.get(uId);
     }
 }

@@ -6,7 +6,7 @@ spring:
     name: springboot-helloworld-door
 
 # 自定义中间件配置
-itstack:
+moses:
   door:
     enabled: true
     userStr: 1001,aaaa,ccc #白名单用户ID，多个逗号隔开

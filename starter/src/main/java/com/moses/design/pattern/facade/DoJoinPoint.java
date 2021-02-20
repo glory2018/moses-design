@@ -20,7 +20,7 @@ import java.lang.reflect.Method;
 
 /**
  * 切面定义
- * 公众号：bugstack虫洞栈 | 沉淀、分享、成长，让自己和他人都能有所收获！
+  | 沉淀、分享、成长，让自己和他人都能有所收获！
  * 博  客：http://bugstack.cn
  */
 @Aspect

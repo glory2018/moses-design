@@ -1,37 +1,56 @@
 package com.moses.design.pattern.responsibility;
 
+import com.moses.design.pattern.responsibility.base.AuthService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 /**
- * 审核规定；
- * 1. 601-610 三级审批 + 二级审批
- * 2. 611-620 三级审批 + 二级审批 + 一级审批
- * 3. 其他时间 三级审批
+ * 身份验证链接
+ *
+ * @author fanshaorong
+ * @date 2021/02/05
  */
 public abstract class AuthLink {
     protected Logger logger = LoggerFactory.getLogger(AuthLink.class);
-    protected SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");// 时间格式化
-    protected String levelUserId;                           // 级别人员ID
-    protected String levelUserName;                         // 级别人员姓名
-    private AuthLink next;                                  // 责任链
+    //总经理
+    public static int GENERAL_MANAGER = 1;
+    //项目经理
+    public static int PROJECT_MANAGER = 2;
+    //主管
+    public static int DIRECTOR = 3;
+    //责任链中的下一个元素
+    private AuthLink next;
+    protected int level;
+    protected String userId;                           // 级别人员ID
+    protected String userName;                         // 级别人员姓名
 
-    public AuthLink(String levelUserId, String levelUserName) {
-        this.levelUserId = levelUserId;
-        this.levelUserName = levelUserName;
+    public AuthLink(int level, String userId, String userName) {
+        this.level = level;
+        this.userId = userId;
+        this.userName = userName;
     }
 
-    public AuthLink next() {
-        return next;
-    }
-
-    public AuthLink appendNext(AuthLink next) {
+    public void setNext(AuthLink next) {
         this.next = next;
-        return this;
     }
 
-    public abstract AuthInfo doAuth(String uId, String orderId, Date authDate);
+    public void doAuth(int level, String uId, String orderId) {
+        if (this.level <= level) {
+            approval(uId, orderId);
+        }
+        if (next != null && approved(uId)) {
+            next.doAuth(level, uId, orderId);
+        }
+    }
+
+    protected abstract void approval(String uId, String orderId);
+
+    private boolean approved(String uId) {
+        AuthInfo authInfo = AuthService.queryAuthInfo(uId);
+        return authInfo != null && authInfo.getStatus().equals("agree");
+    }
+
+    public AuthInfo getInfo(String status, String uId, String orderId) {
+        return new AuthInfo(status, "单号：", orderId, " 申请人：", uId, " 级别：", String.valueOf(level), " 时间：", DateUtil.getDate(), " 审批人：", userName);
+    }
 }
