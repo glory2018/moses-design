@@ -9,5 +9,6 @@ public interface Collection<E, L> extends Iterable<E> {
 
     boolean removeLink(String key);
 
+    @Override
     Iterator<E> iterator();
 }

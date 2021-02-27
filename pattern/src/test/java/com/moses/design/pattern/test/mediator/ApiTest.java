@@ -1,11 +1,11 @@
 package com.moses.design.pattern.test.mediator;
 
 import com.alibaba.fastjson.JSON;
-import com.moses.design.pattern.mediator.mediator.Resources;
-import com.moses.design.pattern.mediator.mediator.SqlSession;
-import com.moses.design.pattern.mediator.mediator.SqlSessionFactory;
-import com.moses.design.pattern.mediator.mediator.SqlSessionFactoryBuilder;
 import com.moses.design.pattern.mediator.po.User;
+import com.moses.design.pattern.mediator.session.Resources;
+import com.moses.design.pattern.mediator.session.SqlSession;
+import com.moses.design.pattern.mediator.session.SqlSessionFactory;
+import com.moses.design.pattern.mediator.session.SqlSessionFactoryBuilder;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,26 +18,17 @@ public class ApiTest {
 
     @Test
     public void test_queryUserInfoById() {
-        String resource = "mybatis-config-datasource.xml";
-        Reader reader;
-        try {
-            reader = Resources.getResourceAsReader(resource);
-            SqlSessionFactory sqlMapper = new SqlSessionFactoryBuilder().build(reader);
-            SqlSession session = sqlMapper.openSession();
-            try {
-                User user = session.selectOne("org.moses.demo.design.dao.IUserDao.queryUserInfoById", 1L);
-                logger.info("测试结果：{}", JSON.toJSONString(user));
-            } finally {
-                session.close();
-                reader.close();
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        query("com.moses.design.pattern.mediator.dao.IUserDao.queryUserInfoById", 1L);
     }
 
     @Test
     public void test_queryUserList() {
+        User req = new User();
+        req.setAge(18);
+        query("com.moses.design.pattern.mediator.dao.IUserDao.queryUserList", req);
+    }
+
+    private void query(String sql, Object param) {
         String resource = "mybatis-config-datasource.xml";
         Reader reader;
         try {
@@ -45,9 +36,7 @@ public class ApiTest {
             SqlSessionFactory sqlMapper = new SqlSessionFactoryBuilder().build(reader);
             SqlSession session = sqlMapper.openSession();
             try {
-                User req = new User();
-                req.setAge(18);
-                List<User> userList = session.selectList("org.moses.demo.design.dao.IUserDao.queryUserList", req);
+                List<User> userList = session.selectList(sql, param);
                 logger.info("测试结果：{}", JSON.toJSONString(userList));
             } finally {
                 session.close();

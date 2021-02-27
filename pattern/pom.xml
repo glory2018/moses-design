@@ -9,7 +9,6 @@
         <artifactId>moses-design</artifactId>
         <version>1.0.0</version>
     </parent>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -37,6 +36,11 @@
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
             <version>1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>jaxen</groupId>
+            <artifactId>jaxen</artifactId>
+            <version>1.1.6</version>
         </dependency>
         <dependency>
             <groupId>dom4j</groupId>
@@ -71,7 +75,6 @@
             <version>3.5.6</version>
         </dependency>
     </dependencies>
-
     <build>
         <plugins>
             <plugin>

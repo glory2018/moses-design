@@ -9,6 +9,6 @@ public class MessageEventListener implements EventListener {
 
     @Override
     public void doEvent(LotteryResult result) {
-        logger.info("给用户 {} 发送短信通知(短信)：{}", result.getuId(), result.getMsg());
+        logger.info("给用户 {} 发送短信通知(短信)：{}", result.getUId(), result.getMsg());
     }
 }

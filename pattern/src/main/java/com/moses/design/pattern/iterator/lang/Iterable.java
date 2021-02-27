@@ -1,5 +1,5 @@
 package com.moses.design.pattern.iterator.lang;
 
-public interface Iterable<E> {
-    Iterator<E> iterator();
+public interface Iterable<T> {
+    Iterator<T> iterator();
 }

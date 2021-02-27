@@ -23,12 +23,12 @@ public class GroupStructure implements Collection<Employee, Link> {
 
     @Override
     public boolean add(Employee employee) {
-        return null != employeeMap.put(employee.getuId(), employee);
+        return null != employeeMap.put(employee.getUId(), employee);
     }
 
     @Override
     public boolean remove(Employee o) {
-        return null != employeeMap.remove(o.getuId());
+        return null != employeeMap.remove(o.getUId());
     }
 
     @Override
@@ -51,51 +51,53 @@ public class GroupStructure implements Collection<Employee, Link> {
 
     @Override
     public Iterator<Employee> iterator() {
-        return new Iterator<Employee>() {
-            HashMap<String, Integer> keyMap = new HashMap<String, Integer>();
-            int totalIdx = 0;
-            private String fromId = groupId;  // 雇员ID，From
-            private String toId = groupId;   // 雇员ID，To
+        return new GroupIterator();
+    }
 
-            @Override
-            public boolean hasNext() {
-                return totalIdx < employeeMap.size();
-            }
+    private class GroupIterator implements Iterator {
+        HashMap<String, Integer> keyMap = new HashMap<String, Integer>();
+        int totalIdx = 0;
+        private String fromId = groupId;  // 雇员ID，From
+        private String toId = groupId;   // 雇员ID，To
 
-            @Override
-            public Employee next() {
-                List<Link> links = linkMap.get(toId);
-                int cursorIdx = getCursorIdx(toId);
-                // 同级节点扫描
-                if (null == links) {
-                    cursorIdx = getCursorIdx(fromId);
-                    links = linkMap.get(fromId);
-                }
-                // 上级节点扫描
-                while (cursorIdx > links.size() - 1) {
-                    fromId = invertedMap.get(fromId);
-                    cursorIdx = getCursorIdx(fromId);
-                    links = linkMap.get(fromId);
-                }
-                // 获取节点
-                Link link = links.get(cursorIdx);
-                toId = link.getToId();
-                fromId = link.getFromId();
-                totalIdx++;
-                // 返回结果
-                return employeeMap.get(link.getToId());
-            }
+        @Override
+        public boolean hasNext() {
+            return totalIdx < employeeMap.size();
+        }
 
-            public int getCursorIdx(String key) {
-                int idx = 0;
-                if (keyMap.containsKey(key)) {
-                    idx = keyMap.get(key);
-                    keyMap.put(key, ++idx);
-                } else {
-                    keyMap.put(key, idx);
-                }
-                return idx;
+        @Override
+        public Employee next() {
+            List<Link> links = linkMap.get(toId);
+            int cursorIdx = getCursorIdx(toId);
+            // 同级节点扫描
+            if (null == links) {
+                cursorIdx = getCursorIdx(fromId);
+                links = linkMap.get(fromId);
             }
-        };
+            // 上级节点扫描
+            while (cursorIdx > links.size() - 1) {
+                fromId = invertedMap.get(fromId);
+                cursorIdx = getCursorIdx(fromId);
+                links = linkMap.get(fromId);
+            }
+            // 获取节点
+            Link link = links.get(cursorIdx);
+            toId = link.getToId();
+            fromId = link.getFromId();
+            totalIdx++;
+            // 返回结果
+            return employeeMap.get(link.getToId());
+        }
+
+        public int getCursorIdx(String key) {
+            int idx = 0;
+            if (keyMap.containsKey(key)) {
+                idx = keyMap.get(key);
+                keyMap.put(key, ++idx);
+            } else {
+                keyMap.put(key, idx);
+            }
+            return idx;
+        }
     }
 }

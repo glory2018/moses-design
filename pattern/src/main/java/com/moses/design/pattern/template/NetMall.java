@@ -27,7 +27,9 @@ public abstract class NetMall {
      * @return 海报图片base64位信息
      */
     public String generateGoodsPoster(String skuUrl) {
-        if (!login(uId, uPwd)) return null;             // 1. 验证登录
+        if (!login(uId, uPwd)) {
+            return null;             // 1. 验证登录
+        }
         Map<String, String> reptile = reptile(skuUrl);  // 2. 爬虫商品
         return createBase64(reptile);                   // 3. 组装海报
     }

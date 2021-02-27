@@ -42,3 +42,19 @@ JDKProxy 、 JDKInvocationHandler ，是代理类的定义和实现，这部分�
 ## 命令模式
 
 ![command.png](screenshot/command.png)
+
+## 迭代器模式
+
+![iterator.png](screenshot/iterator.png)
+
+## 中介者模式
+
+![mediator.png](screenshot/mediator.png)
+##备忘录模式
+![memento.png](screenshot/memento.png)
+##观察者模式
+![observer.png](screenshot/observer.png)
+##状态模式
+![state.png](screenshot/state.png)
+##策略模式
+![strategy.png](screenshot/strategy.png)

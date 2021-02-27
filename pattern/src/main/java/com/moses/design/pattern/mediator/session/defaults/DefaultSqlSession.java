@@ -1,4 +1,7 @@
-package com.moses.design.pattern.mediator.mediator;
+package com.moses.design.pattern.mediator.session.defaults;
+
+import com.moses.design.pattern.mediator.session.SqlSession;
+import com.moses.design.pattern.mediator.session.XNode;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -7,9 +10,7 @@ import java.util.Date;
 import java.util.*;
 
 /**
- * 公众号 | bugstack虫洞栈
- * 博 客 | https://bugstack.cn
- * Create by 小傅哥 @2020
+ *
  */
 public class DefaultSqlSession implements SqlSession {
     private Connection connection;
@@ -22,45 +23,25 @@ public class DefaultSqlSession implements SqlSession {
 
     @Override
     public <T> T selectOne(String statement) {
-        try {
-            XNode xNode = mapperElement.get(statement);
-            PreparedStatement preparedStatement = connection.prepareStatement(xNode.getSql());
-            ResultSet resultSet = preparedStatement.executeQuery();
-            List<T> objects = resultSet2Obj(resultSet, Class.forName(xNode.getResultType()));
-            return objects.get(0);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return null;
+        return this.selectOne(statement, null);
     }
 
     @Override
     public <T> T selectOne(String statement, Object parameter) {
-        XNode xNode = mapperElement.get(statement);
-        Map<Integer, String> parameterMap = xNode.getParameter();
-        try {
-            PreparedStatement preparedStatement = connection.prepareStatement(xNode.getSql());
-            buildParameter(preparedStatement, parameter, parameterMap);
-            ResultSet resultSet = preparedStatement.executeQuery();
-            List<T> objects = resultSet2Obj(resultSet, Class.forName(xNode.getResultType()));
-            return objects.get(0);
-        } catch (Exception e) {
-            e.printStackTrace();
+        // Popular vote was to return null on 0 results and throw exception on too many.
+        List<T> list = this.selectList(statement, parameter);
+        if (list.size() == 1) {
+            return list.get(0);
+//        } else if (list.size() > 1) {
+//            throw new TooManyResultsException("Expected one result (or null) to be returned by selectOne(), but found: " + list.size());
+        } else {
+            return null;
         }
-        return null;
     }
 
     @Override
-    public <T> List<T> selectList(String statement) {
-        XNode xNode = mapperElement.get(statement);
-        try {
-            PreparedStatement preparedStatement = connection.prepareStatement(xNode.getSql());
-            ResultSet resultSet = preparedStatement.executeQuery();
-            return resultSet2Obj(resultSet, Class.forName(xNode.getResultType()));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return null;
+    public <E> List<E> selectList(String statement) {
+        return this.selectList(statement, null);
     }
 
     @Override
@@ -164,7 +145,9 @@ public class DefaultSqlSession implements SqlSession {
 
     @Override
     public void close() {
-        if (null == connection) return;
+        if (null == connection) {
+            return;
+        }
         try {
             connection.close();
         } catch (SQLException e) {

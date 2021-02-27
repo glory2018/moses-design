@@ -18,11 +18,13 @@ public class JDNetMall extends NetMall {
         super(uId, uPwd);
     }
 
+    @Override
     public Boolean login(String uId, String uPwd) {
         logger.info("模拟京东用户登录 uId：{} uPwd：{}", uId, uPwd);
         return true;
     }
 
+    @Override
     public Map<String, String> reptile(String skuUrl) {
         String str = HttpClient.doGet(skuUrl);
         Pattern p9 = Pattern.compile("(?<=title\\>).*(?=</title)");

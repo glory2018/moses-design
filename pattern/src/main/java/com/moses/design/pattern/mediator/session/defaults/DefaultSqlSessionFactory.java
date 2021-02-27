@@ -1,9 +1,11 @@
-package com.moses.design.pattern.mediator.mediator;
+package com.moses.design.pattern.mediator.session.defaults;
+
+import com.moses.design.pattern.mediator.session.Configuration;
+import com.moses.design.pattern.mediator.session.SqlSession;
+import com.moses.design.pattern.mediator.session.SqlSessionFactory;
 
 /**
- * 公众号 | bugstack虫洞栈
- * 博 客 | https://bugstack.cn
- * Create by 小傅哥 @2020
+ *
  */
 public class DefaultSqlSessionFactory implements SqlSessionFactory {
     private final Configuration configuration;

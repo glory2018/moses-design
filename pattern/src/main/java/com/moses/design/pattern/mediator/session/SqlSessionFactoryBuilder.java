@@ -1,5 +1,6 @@
-package com.moses.design.pattern.mediator.mediator;
+package com.moses.design.pattern.mediator.session;
 
+import com.moses.design.pattern.mediator.session.defaults.DefaultSqlSessionFactory;
 import org.apache.ibatis.builder.xml.XMLMapperEntityResolver;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
@@ -17,12 +18,19 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * 公众号 | bugstack虫洞栈
- * 博 客 | https://bugstack.cn
- * Create by 小傅哥 @2020
- */
+import static java.util.regex.Pattern.compile;
+
 public class SqlSessionFactoryBuilder {
+    public SqlSessionFactory build(Configuration config) {
+        return new DefaultSqlSessionFactory(config);
+    }
+
+    /**
+     * 构建实例化元素
+     *
+     * @param reader
+     * @return {@link DefaultSqlSessionFactory}
+     */
     public DefaultSqlSessionFactory build(Reader reader) {
         SAXReader saxReader = new SAXReader();
         try {
@@ -36,10 +44,18 @@ public class SqlSessionFactoryBuilder {
         return null;
     }
 
+    /**
+     * 解析配置
+     *
+     * @param root 根
+     * @return {@link Configuration}
+     */
     private Configuration parseConfiguration(Element root) {
         Configuration configuration = new Configuration();
+        //从任意位置的节点上选择名称为 dataSource 的节点。
         configuration.setDataSource(dataSource(root.selectNodes("//dataSource")));
         configuration.setConnection(connection(configuration.dataSource));
+        //从当前节点的子节点中选择名称为 mappers 的节点。
         configuration.setMapperElement(mapperElement(root.selectNodes("mappers")));
         return configuration;
     }
@@ -92,7 +108,7 @@ public class SqlSessionFactoryBuilder {
                     String sql = node.getText();
                     // ? 匹配
                     Map<Integer, String> parameter = new HashMap<>();
-                    Pattern pattern = Pattern.compile("(#\\{(.*?)})");
+                    Pattern pattern = compile("(#\\{(.*?)})");
                     Matcher matcher = pattern.matcher(sql);
                     for (int i = 1; matcher.find(); i++) {
                         String g1 = matcher.group(1);

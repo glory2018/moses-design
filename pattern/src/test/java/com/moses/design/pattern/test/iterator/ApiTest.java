@@ -31,7 +31,7 @@ public class ApiTest {
         Iterator<Employee> iterator = groupStructure.iterator();
         while (iterator.hasNext()) {
             Employee employee = iterator.next();
-            logger.info("{}，雇员 Id：{} Name：{}", employee.getDesc(), employee.getuId(), employee.getName());
+            logger.info("{}，雇员 Id：{} Name：{}", employee.getDesc(), employee.getUId(), employee.getName());
         }
     }
 }
