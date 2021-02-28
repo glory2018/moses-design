@@ -6,6 +6,7 @@ import java.math.BigDecimal;
  *
  */
 public class Context<T> {
+    //策略
     private ICouponDiscount<T> couponDiscount;
 
     public Context(ICouponDiscount<T> couponDiscount) {

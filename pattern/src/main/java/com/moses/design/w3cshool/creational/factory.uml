@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.moses.design.w3cshool.creational.factory</OriginalElement>
+  <nodes>
+    <node x="0.0" y="201.0">com.moses.design.w3cshool.creational.factory.ShapeFactory</node>
+    <node x="140.0" y="103.0">com.moses.design.w3cshool.creational.factory.Circle</node>
+    <node x="280.0" y="103.0">com.moses.design.w3cshool.creational.factory.Rectangle</node>
+    <node x="140.0" y="0.0">com.moses.design.w3cshool.creational.factory.Shape</node>
+    <node x="0.0" y="103.0">com.moses.design.w3cshool.creational.factory.Square</node>
+    <node x="0.0" y="299.0">com.moses.design.w3cshool.creational.factory.FactoryPatternDemo</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.moses.design.w3cshool.creational.factory.Rectangle" target="com.moses.design.w3cshool.creational.factory.Shape">
+      <point x="0.0" y="-26.5" />
+      <point x="340.0" y="78.0" />
+      <point x="240.0" y="78.0" />
+      <point x="40.0" y="26.5" />
+    </edge>
+    <edge source="com.moses.design.w3cshool.creational.factory.Square" target="com.moses.design.w3cshool.creational.factory.Shape">
+      <point x="0.0" y="-26.5" />
+      <point x="60.0" y="78.0" />
+      <point x="160.0" y="78.0" />
+      <point x="-40.0" y="26.5" />
+    </edge>
+    <edge source="com.moses.design.w3cshool.creational.factory.Circle" target="com.moses.design.w3cshool.creational.factory.Shape">
+      <point x="0.0" y="-26.5" />
+      <point x="0.0" y="26.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="200.0" y="191.5" />
+  <SelectedNodes>
+    <node>com.moses.design.w3cshool.creational.factory.ShapeFactory</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>字段</Category>
+    <Category>构造函数</Category>
+    <Category>方法</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
