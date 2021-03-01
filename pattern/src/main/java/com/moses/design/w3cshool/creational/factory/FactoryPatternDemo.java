@@ -8,7 +8,7 @@ package com.moses.design.w3cshool.creational.factory;
  * @author Moses
  * @date 2021/2/28
  */
-public class FactoryPatternDemo {
+public class FactoryPatternDemo extends ShapeFactory {
     public static void main(String[] args) {
         ShapeFactory shapeFactory = new ShapeFactory();
         //获取 Circle 的对象，并调用它的 draw 方法
