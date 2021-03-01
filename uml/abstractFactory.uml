@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.moses.design.w3cshool.creational.abstractFactory</OriginalElement>
+  <nodes>
+    <node x="411.7808219178082" y="392.9315068493151">com.moses.design.w3cshool.creational.abstractFactory.Square</node>
+    <node x="411.7808219178082" y="289.9315068493151">com.moses.design.w3cshool.creational.abstractFactory.Shape</node>
+    <node x="459.17808219178085" y="11.383561643835606">com.moses.design.w3cshool.creational.abstractFactory.AbstractFactoryPatternDemo</node>
+    <node x="14.315068493150704" y="288.1917808219178">com.moses.design.w3cshool.creational.abstractFactory.Color</node>
+    <node x="139.3150684931507" y="391.1917808219178">com.moses.design.w3cshool.creational.abstractFactory.Red</node>
+    <node x="109.5" y="0.0">com.moses.design.w3cshool.creational.abstractFactory.AbstractFactory</node>
+    <node x="14.315068493150704" y="391.1917808219178">com.moses.design.w3cshool.creational.abstractFactory.Blue</node>
+    <node x="551.7808219178082" y="392.9315068493151">com.moses.design.w3cshool.creational.abstractFactory.Circle</node>
+    <node x="219.0" y="125.0">com.moses.design.w3cshool.creational.abstractFactory.ShapeFactory</node>
+    <node x="0.0" y="125.0">com.moses.design.w3cshool.creational.abstractFactory.ColorFactory</node>
+    <node x="449.31506849315076" y="128.19178082191775">com.moses.design.w3cshool.creational.abstractFactory.FactoryProducer</node>
+    <node x="271.7808219178082" y="392.9315068493151">com.moses.design.w3cshool.creational.abstractFactory.Rectangle</node>
+    <node x="-110.6849315068493" y="391.1917808219178">com.moses.design.w3cshool.creational.abstractFactory.Green</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.moses.design.w3cshool.creational.abstractFactory.ShapeFactory" target="com.moses.design.w3cshool.creational.abstractFactory.AbstractFactory">
+      <point x="0.0" y="-37.5" />
+      <point x="318.5" y="100.0" />
+      <point x="258.75" y="100.0" />
+      <point x="49.75" y="37.5" />
+    </edge>
+    <edge source="com.moses.design.w3cshool.creational.abstractFactory.Circle" target="com.moses.design.w3cshool.creational.abstractFactory.Shape">
+      <point x="0.0" y="-26.5" />
+      <point x="611.7808219178082" y="367.9315068493151" />
+      <point x="511.7808219178082" y="367.9315068493151" />
+      <point x="40.0" y="26.5" />
+    </edge>
+    <edge source="com.moses.design.w3cshool.creational.abstractFactory.Green" target="com.moses.design.w3cshool.creational.abstractFactory.Color">
+      <point x="0.0" y="-26.5" />
+      <point x="-58.184931506849296" y="366.1917808219178" />
+      <point x="31.815068493150704" y="366.1917808219178" />
+      <point x="-35.0" y="26.5" />
+    </edge>
+    <edge source="com.moses.design.w3cshool.creational.abstractFactory.Square" target="com.moses.design.w3cshool.creational.abstractFactory.Shape">
+      <point x="0.0" y="-26.5" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="com.moses.design.w3cshool.creational.abstractFactory.Blue" target="com.moses.design.w3cshool.creational.abstractFactory.Color">
+      <point x="0.0" y="-26.5" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="com.moses.design.w3cshool.creational.abstractFactory.Red" target="com.moses.design.w3cshool.creational.abstractFactory.Color">
+      <point x="0.0" y="-26.5" />
+      <point x="191.8150684931507" y="366.1917808219178" />
+      <point x="101.8150684931507" y="366.1917808219178" />
+      <point x="35.0" y="26.5" />
+    </edge>
+    <edge source="com.moses.design.w3cshool.creational.abstractFactory.Rectangle" target="com.moses.design.w3cshool.creational.abstractFactory.Shape">
+      <point x="0.0" y="-26.5" />
+      <point x="331.7808219178082" y="367.9315068493151" />
+      <point x="431.7808219178082" y="367.9315068493151" />
+      <point x="-40.0" y="26.5" />
+    </edge>
+    <edge source="com.moses.design.w3cshool.creational.abstractFactory.ColorFactory" target="com.moses.design.w3cshool.creational.abstractFactory.AbstractFactory">
+      <point x="0.0" y="-37.5" />
+      <point x="99.5" y="100.0" />
+      <point x="159.25" y="100.0" />
+      <point x="-49.75" y="37.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="303.0" y="223.0" />
+  <SelectedNodes>
+    <node>com.moses.design.w3cshool.creational.abstractFactory.Square</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>字段</Category>
+    <Category>构造函数</Category>
+    <Category>方法</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
