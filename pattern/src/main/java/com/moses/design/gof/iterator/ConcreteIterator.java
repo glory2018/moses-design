@@ -11,11 +11,10 @@ package com.moses.design.gof.iterator;
 import java.util.Vector;
 
 /**
+ * @author adamjwh
  * @ClassName: ConcreteIterator
  * @Description: 具体迭代器
- * @author adamjwh
  * @date 2018年7月31日
- *
  */
 public class ConcreteIterator implements Iterator {
     private Vector vector = new Vector();

@@ -1,7 +1,7 @@
 /**
  * @Title: Client.java
  * @Package com.adamjwh.gofex.visitor
- * @Description: 
+ * @Description:
  * @author adamjwh
  * @date 2018年7月29日
  * @version V1.0
@@ -16,20 +16,15 @@ package com.moses.design.gofex.visitor;
  *
  */
 public class Client {
-	
-	public static void main(String[] args) {
-		ObjectStructure objectStructure = new ObjectStructure();
-		
-		objectStructure.attach(new Man());
-		objectStructure.attach(new Woman());
-		
-		//成功
-		Success success = new Success();
-		objectStructure.display(success);
-		
-		//失败
-		Failing failing = new Failing();
-		objectStructure.display(failing);
-	}
-
+    public static void main(String[] args) {
+        ObjectStructure objectStructure = new ObjectStructure();
+        objectStructure.attach(new Man());
+        objectStructure.attach(new Woman());
+        //成功
+        Success success = new Success();
+        objectStructure.display(success);
+        //失败
+        Failing failing = new Failing();
+        objectStructure.display(failing);
+    }
 }

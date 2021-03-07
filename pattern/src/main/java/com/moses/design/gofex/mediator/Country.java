@@ -1,7 +1,7 @@
 /**
  * @Title: Country.java
  * @Package com.adamjwh.gofex.mediator
- * @Description: 
+ * @Description:
  * @author adamjwh
  * @date 2018年7月28日
  * @version V1.0
@@ -16,11 +16,9 @@ package com.moses.design.gofex.mediator;
  *
  */
 public class Country {
-	
-	protected UnitedNations unitedNations;
-	
-	public Country(UnitedNations unitedNations) {
-		this.unitedNations = unitedNations;
-	}
+    protected UnitedNations unitedNations;
 
+    public Country(UnitedNations unitedNations) {
+        this.unitedNations = unitedNations;
+    }
 }

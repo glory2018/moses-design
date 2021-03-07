@@ -1,7 +1,7 @@
 /**
  * @Title: Subject.java
  * @Package com.adamjwh.gofex.observer
- * @Description: 
+ * @Description:
  * @author adamjwh
  * @date 2018年5月28日
  * @version V1.0
@@ -16,16 +16,17 @@ package com.moses.design.gofex.observer;
  *
  */
 public interface Subject {
+    //增加
+    public void attach(Observer observer);
 
-	//增加
-	public void attach(Observer observer);
-	//删除
-	public void detach(Observer observer);
-	//通知
-	public void notifyObservers();
-	
-	//状态
-	public void setAction(String action);
-	public String getAction();
-	
+    //删除
+    public void detach(Observer observer);
+
+    //通知
+    public void notifyObservers();
+
+    //状态
+    public void setAction(String action);
+
+    public String getAction();
 }

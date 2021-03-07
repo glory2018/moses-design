@@ -9,11 +9,10 @@
 package com.moses.design.gof.strategy;
 
 /**
+ * @author adamjwh
  * @ClassName: ConcreteStrategyC
  * @Description: 具体策略角色C
- * @author adamjwh
  * @date 2018年7月30日
- *
  */
 public class ConcreteStrategyC extends Strategy {
     @Override

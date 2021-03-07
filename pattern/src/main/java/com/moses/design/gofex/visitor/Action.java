@@ -1,7 +1,7 @@
 /**
  * @Title: Action.java
  * @Package com.adamjwh.gofex.visitor
- * @Description: 
+ * @Description:
  * @author adamjwh
  * @date 2018年7月29日
  * @version V1.0
@@ -16,11 +16,9 @@ package com.moses.design.gofex.visitor;
  *
  */
 public abstract class Action {
-	
-	//得到男人的结论或反应
-	public abstract void getManConclusion(Man man);
-	
-	//得到女人的结论或反应
-	public abstract void getWomanConclusion(Woman woman);
+    //得到男人的结论或反应
+    public abstract void getManConclusion(Man man);
 
+    //得到女人的结论或反应
+    public abstract void getWomanConclusion(Woman woman);
 }

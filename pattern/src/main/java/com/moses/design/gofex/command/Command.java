@@ -1,7 +1,7 @@
 /**
  * @Title: Command.java
  * @Package com.adamjwh.gofex.command
- * @Description: 
+ * @Description:
  * @author adamjwh
  * @date 2018年5月30日
  * @version V1.0
@@ -16,17 +16,15 @@ package com.moses.design.gofex.command;
  *
  */
 public abstract class Command {
+    protected Barbecuer receiver;
 
-	protected Barbecuer receiver;
-	
-	public Command(Barbecuer receiver) {
-		this.receiver = receiver;
-	}
-	
-	//执行命令
-	abstract public void excuteCommand();
-	
-	//获取名称
-	abstract public String getBarbecuer();
-	
+    public Command(Barbecuer receiver) {
+        this.receiver = receiver;
+    }
+
+    //执行命令
+    abstract public void excuteCommand();
+
+    //获取名称
+    abstract public String getBarbecuer();
 }

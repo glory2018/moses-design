@@ -2,17 +2,14 @@ package com.moses.design.gofex.factory_method;
 
 /**
  * 减法类
- * @author adamjwh
  *
+ * @author adamjwh
  */
 public class OperationSub extends Operation {
-
-	@Override
-	public double getResult() {
-		double result = 0;
-		result = numberA - numberB;
-		
-		return result;
-	}
-	
+    @Override
+    public double getResult() {
+        double result = 0;
+        result = numberA - numberB;
+        return result;
+    }
 }

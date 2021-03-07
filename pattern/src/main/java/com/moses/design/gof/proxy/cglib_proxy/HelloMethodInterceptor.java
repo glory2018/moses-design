@@ -14,11 +14,10 @@ import org.springframework.cglib.proxy.MethodProxy;
 import java.lang.reflect.Method;
 
 /**
+ * @author adamjwh
  * @ClassName: HelloMethodInterceptor
  * @Description: 拦截器（需要导入cglib依赖包）
- * @author adamjwh
  * @date 2018年8月9日
- *
  */
 public class HelloMethodInterceptor implements MethodInterceptor {
     @Override

@@ -1,36 +1,25 @@
 /**
  * @Title: Context.java
  * @Package com.adamjwh.gof.interpreter
- * @Description: 
+ * @Description:
  * @author adamjwh
  * @date 2018年7月27日
  * @version V1.0
  */
 package com.moses.design.gof.interpreter;
 
+import lombok.Getter;
+import lombok.Setter;
+
 /**
+ * @author adamjwh
  * @ClassName: Context
  * @Description: 环境角色
- * @author adamjwh
  * @date 2018年7月27日
- *
  */
+@Getter
+@Setter
 public class Context {
-
-	private String input;
-	private String output;
-	
-	public String getInput() {
-		return input;
-	}
-	public void setInput(String input) {
-		this.input = input;
-	}
-	public String getOutput() {
-		return output;
-	}
-	public void setOutput(String output) {
-		this.output = output;
-	}
-	
+    private String input;
+    private String output;
 }

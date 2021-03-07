@@ -9,11 +9,10 @@
 package com.moses.design.gof.observer;
 
 /**
+ * @author adamjwh
  * @ClassName: ConcreteObserver
  * @Description: 具体观察者
- * @author adamjwh
  * @date 2018年5月28日
- *
  */
 public class ConcreteObserver implements Observer {
     @Override

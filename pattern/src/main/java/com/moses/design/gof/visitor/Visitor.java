@@ -9,11 +9,10 @@
 package com.moses.design.gof.visitor;
 
 /**
+ * @author adamjwh
  * @ClassName: Visitor
  * @Description: 抽象访问者
- * @author adamjwh
  * @date 2018年7月29日
- *
  */
 public abstract class Visitor {
     public abstract void visitConcreteElementA(ConcreteElementA concreteElementA);

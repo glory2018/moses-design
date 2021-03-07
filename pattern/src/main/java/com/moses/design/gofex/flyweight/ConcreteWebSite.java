@@ -2,20 +2,18 @@ package com.moses.design.gofex.flyweight;
 
 /**
  * 具体网站类
- * @author adamjwh
  *
+ * @author adamjwh
  */
 public class ConcreteWebSite extends WebSite {
+    private String name = "";
 
-	private String name = "";
-	
-	public ConcreteWebSite(String name) {
-		this.name = name;
-	}
-	
-	@Override
-	public void use(User user) {
-		System.out.println("网站分类：" + name + " 用户：" + user.getName());
-	}
-	
+    public ConcreteWebSite(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public void use(User user) {
+        System.out.println("网站分类：" + name + " 用户：" + user.getName());
+    }
 }

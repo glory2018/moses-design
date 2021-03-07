@@ -9,11 +9,10 @@
 package com.moses.design.gof.proxy.cglib_proxy;
 
 /**
+ * @author adamjwh
  * @ClassName: Hello
  * @Description: 被代理类
- * @author adamjwh
  * @date 2018年8月9日
- *
  */
 public class Hello {
     public void sayHello() {

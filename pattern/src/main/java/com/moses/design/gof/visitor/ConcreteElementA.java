@@ -9,11 +9,10 @@
 package com.moses.design.gof.visitor;
 
 /**
+ * @author adamjwh
  * @ClassName: ConcreteElementA
  * @Description: 具体元素A
- * @author adamjwh
  * @date 2018年7月29日
- *
  */
 public class ConcreteElementA extends Element {
     @Override

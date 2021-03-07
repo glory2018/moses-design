@@ -1,7 +1,7 @@
 /**
  * @Title: CashContext.java
  * @Package com.adamjwh.gofex.strategy
- * @Description: 
+ * @Description:
  * @author adamjwh
  * @date 2018年7月30日
  * @version V1.0
@@ -16,15 +16,13 @@ package com.moses.design.gofex.strategy;
  *
  */
 public class CashContext {
-	
-	private CashSuper cashSuper;
-	
-	public CashContext(CashSuper cashSuper) {
-		this.cashSuper = cashSuper;
-	}
-	
-	public double getResult(double money) {
-		return cashSuper.acceptCash(money);
-	}
+    private CashSuper cashSuper;
 
+    public CashContext(CashSuper cashSuper) {
+        this.cashSuper = cashSuper;
+    }
+
+    public double getResult(double money) {
+        return cashSuper.acceptCash(money);
+    }
 }

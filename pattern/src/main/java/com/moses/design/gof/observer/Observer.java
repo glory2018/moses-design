@@ -9,11 +9,10 @@
 package com.moses.design.gof.observer;
 
 /**
+ * @author adamjwh
  * @ClassName: Observer
  * @Description: 观察者
- * @author adamjwh
  * @date 2018年5月28日
- *
  */
 public interface Observer {
     //更新

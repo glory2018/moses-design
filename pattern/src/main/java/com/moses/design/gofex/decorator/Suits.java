@@ -2,15 +2,13 @@ package com.moses.design.gofex.decorator;
 
 /**
  * 具体服装类
- * @author adamjwh
  *
+ * @author adamjwh
  */
 public class Suits extends Finery {
-
-	@Override
-	public void show() {
-		super.show();
-		System.out.print("西装 ");
-	}
-	
+    @Override
+    public void show() {
+        super.show();
+        System.out.print("西装 ");
+    }
 }

@@ -1,7 +1,7 @@
 /**
  * @Title: SymbolExpression.java
  * @Package com.adamjwh.gofex.interpreter
- * @Description: 
+ * @Description:
  * @author adamjwh
  * @date 2018年7月28日
  * @version V1.0
@@ -18,19 +18,17 @@ import java.util.HashMap;
  *
  */
 public class SymbolExpression extends Expression {
-	
-	protected Expression left;
-	protected Expression right;
+    protected Expression left;
+    protected Expression right;
 
-	public SymbolExpression(Expression left, Expression right) {
-		this.left = left;
-		this.right = right;
-	}
+    public SymbolExpression(Expression left, Expression right) {
+        this.left = left;
+        this.right = right;
+    }
 
-	@Override
-	public int interpreter(HashMap<String, Integer> var) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-	
+    @Override
+    public int interpreter(HashMap<String, Integer> var) {
+        // TODO Auto-generated method stub
+        return 0;
+    }
 }

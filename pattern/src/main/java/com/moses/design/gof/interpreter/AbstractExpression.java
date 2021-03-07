@@ -1,7 +1,7 @@
 /**
  * @Title: AbstractExpression.java
  * @Package com.adamjwh.gof.interpreter
- * @Description: 
+ * @Description:
  * @author adamjwh
  * @date 2018年7月27日
  * @version V1.0
@@ -16,5 +16,5 @@ package com.moses.design.gof.interpreter;
  *
  */
 public abstract class AbstractExpression {
-	public abstract void Interpret(Context context);
+    public abstract void Interpret(Context context);
 }

@@ -2,19 +2,17 @@ package com.moses.design.gof.abstract_factory;
 
 /**
  * 产品等级2的实现类
- * @author adamjwh
  *
+ * @author adamjwh
  */
 public class ConcreteFactory2 extends AbstractFactory {
+    @Override
+    public AbstractProductA createProductA() {
+        return new ProductA2();
+    }
 
-	@Override
-	public AbstractProductA createProductA() {
-		return new ProductA2();
-	}
-
-	@Override
-	public AbstractProductB createProductB() {
-		return new ProductB2();
-	}
-
+    @Override
+    public AbstractProductB createProductB() {
+        return new ProductB2();
+    }
 }

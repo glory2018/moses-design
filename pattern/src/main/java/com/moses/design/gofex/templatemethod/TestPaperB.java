@@ -1,7 +1,7 @@
 /**
  * @Title: TestPaperB.java
  * @Package com.adamjwh.gofex.templatemethod
- * @Description: 
+ * @Description:
  * @author adamjwh
  * @date 2018年5月29日
  * @version V1.0
@@ -16,20 +16,18 @@ package com.moses.design.gofex.templatemethod;
  *
  */
 public class TestPaperB extends TestPaper {
+    @Override
+    protected String answer1() {
+        return "c";
+    }
 
-	@Override
-	protected String answer1() {
-		return "c";
-	}
+    @Override
+    protected String answer2() {
+        return "d";
+    }
 
-	@Override
-	protected String answer2() {
-		return "d";
-	}
-
-	@Override
-	protected String answer3() {
-		return "a";
-	}
-	
+    @Override
+    protected String answer3() {
+        return "a";
+    }
 }

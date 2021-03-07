@@ -9,11 +9,10 @@
 package com.moses.design.gof.proxy.dynamic_proxy;
 
 /**
+ * @author adamjwh
  * @ClassName: IBusiness
  * @Description: 被代理的接口
- * @author adamjwh
  * @date 2018年8月9日
- *
  */
 public interface IBusiness {
     public void doWork();

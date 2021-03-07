@@ -9,11 +9,10 @@
 package com.moses.design.gof.proxy.static_proxy;
 
 /**
+ * @author adamjwh
  * @ClassName: Client
  * @Description: 代理模式——静态代理
- * @author adamjwh
  * @date 2018年8月9日
- *
  */
 public class Client {
     public static void main(String[] args) {

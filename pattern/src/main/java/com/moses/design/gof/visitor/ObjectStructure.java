@@ -12,11 +12,10 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
+ * @author adamjwh
  * @ClassName: ObjectStructure
  * @Description: 结构对象
- * @author adamjwh
  * @date 2018年7月29日
- *
  */
 public class ObjectStructure {
     private List<Element> elements = new LinkedList<>();

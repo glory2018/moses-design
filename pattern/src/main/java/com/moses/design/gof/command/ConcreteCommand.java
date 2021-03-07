@@ -9,11 +9,10 @@
 package com.moses.design.gof.command;
 
 /**
+ * @author adamjwh
  * @ClassName: ConcreteCommand
  * @Description: 具体Command
- * @author adamjwh
  * @date 2018年5月30日
- *
  */
 public class ConcreteCommand extends Command {
     //构造传递接收者

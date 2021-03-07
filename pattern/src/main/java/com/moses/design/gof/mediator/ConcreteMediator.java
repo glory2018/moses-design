@@ -9,11 +9,10 @@
 package com.moses.design.gof.mediator;
 
 /**
+ * @author adamjwh
  * @ClassName: ConcreteMediator
  * @Description: 具体中介者角色
- * @author adamjwh
  * @date 2018年7月28日
- *
  */
 public class ConcreteMediator extends Mediator {
     private ConcreteColleague1 colleague1;

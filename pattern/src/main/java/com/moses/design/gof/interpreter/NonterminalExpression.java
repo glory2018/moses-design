@@ -1,7 +1,7 @@
 /**
  * @Title: NonterminalExpression.java
  * @Package com.adamjwh.gof.interpreter
- * @Description: 
+ * @Description:
  * @author adamjwh
  * @date 2018年7月27日
  * @version V1.0
@@ -16,10 +16,8 @@ package com.moses.design.gof.interpreter;
  *
  */
 public class NonterminalExpression extends AbstractExpression {
-
-	@Override
-	public void Interpret(Context context) {
-		System.out.println("非终端解释器");
-	}
-
+    @Override
+    public void Interpret(Context context) {
+        System.out.println("非终端解释器");
+    }
 }

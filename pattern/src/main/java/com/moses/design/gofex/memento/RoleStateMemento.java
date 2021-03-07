@@ -1,7 +1,7 @@
 /**
  * @Title: RoleStateMemento.java
  * @Package com.adamjwh.gofex.memento
- * @Description: 
+ * @Description:
  * @author adamjwh
  * @date 2018年7月31日
  * @version V1.0
@@ -16,39 +16,37 @@ package com.moses.design.gofex.memento;
  *
  */
 public class RoleStateMemento {
-	
-	private int vit;	//生命力
-	private int atk;	//攻击力
-	private int def;	//防御力
-	
-	public RoleStateMemento(int vit, int atk, int def) {
-		this.vit = vit;
-		this.atk = atk;
-		this.def = def;
-	}
+    private int vit;    //生命力
+    private int atk;    //攻击力
+    private int def;    //防御力
 
-	public int getVit() {
-		return vit;
-	}
+    public RoleStateMemento(int vit, int atk, int def) {
+        this.vit = vit;
+        this.atk = atk;
+        this.def = def;
+    }
 
-	public void setVit(int vit) {
-		this.vit = vit;
-	}
+    public int getVit() {
+        return vit;
+    }
 
-	public int getAtk() {
-		return atk;
-	}
+    public void setVit(int vit) {
+        this.vit = vit;
+    }
 
-	public void setAtk(int atk) {
-		this.atk = atk;
-	}
+    public int getAtk() {
+        return atk;
+    }
 
-	public int getDef() {
-		return def;
-	}
+    public void setAtk(int atk) {
+        this.atk = atk;
+    }
 
-	public void setDef(int def) {
-		this.def = def;
-	}
-	
+    public int getDef() {
+        return def;
+    }
+
+    public void setDef(int def) {
+        this.def = def;
+    }
 }

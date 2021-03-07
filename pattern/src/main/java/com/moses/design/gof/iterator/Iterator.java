@@ -9,11 +9,10 @@
 package com.moses.design.gof.iterator;
 
 /**
+ * @author adamjwh
  * @ClassName: Iterator
  * @Description: 抽象迭代器
- * @author adamjwh
  * @date 2018年7月31日
- *
  */
 public interface Iterator {
     public Object next();    //遍历到下一个元素

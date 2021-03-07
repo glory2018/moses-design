@@ -1,7 +1,7 @@
 /**
  * @Title: CashNormal.java
  * @Package com.adamjwh.gofex.strategy
- * @Description: 
+ * @Description:
  * @author adamjwh
  * @date 2018年7月30日
  * @version V1.0
@@ -16,10 +16,8 @@ package com.moses.design.gofex.strategy;
  *
  */
 public class CashNormal extends CashSuper {
-
-	@Override
-	public double acceptCash(double money) {
-		return money;
-	}
-
+    @Override
+    public double acceptCash(double money) {
+        return money;
+    }
 }

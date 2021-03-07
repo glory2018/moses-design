@@ -2,26 +2,25 @@ package com.moses.design.gofex.adapter;
 
 /**
  * 外籍中锋
- * @author adamjwh
  *
+ * @author adamjwh
  */
 public class ForeignCenters {
+    private String name;
 
-	private String name;
+    public String getName() {
+        return name;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
-	
-	public void attackChi() {
-		System.out.println("中锋 " + name + " 进攻");
-	}
+    public void attackChi() {
+        System.out.println("中锋 " + name + " 进攻");
+    }
 
-	public void defenseChi() {
-		System.out.println("中锋 " + name + " 防守");
-	}
+    public void defenseChi() {
+        System.out.println("中锋 " + name + " 防守");
+    }
 }

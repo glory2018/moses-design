@@ -2,23 +2,21 @@ package com.moses.design.gofex.adapter;
 
 /**
  * 前锋
- * @author adamjwh
  *
+ * @author adamjwh
  */
 public class Forwards extends Player {
+    public Forwards(String name) {
+        super(name);
+    }
 
-	public Forwards(String name) {
-		super(name);
-	}
-	
-	@Override
-	public void attack() {
-		System.out.println("Forward " + name + " attack");
-	}
+    @Override
+    public void attack() {
+        System.out.println("Forward " + name + " attack");
+    }
 
-	@Override
-	public void defense() {
-		System.out.println("Forward " + name + " defense");
-	}
-
+    @Override
+    public void defense() {
+        System.out.println("Forward " + name + " defense");
+    }
 }

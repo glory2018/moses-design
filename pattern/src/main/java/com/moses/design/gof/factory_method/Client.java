@@ -2,13 +2,13 @@ package com.moses.design.gof.factory_method;
 
 /**
  * 工厂方法模式
- * @author adamjwh
  *
+ * @author adamjwh
  */
 public class Client {
-	public static void main(String[] args) {
-		Creator creator = new ConcreteCreator();
-		creator.createProduct(ConcreteProduct1.class);
-		//...
-	}
+    public static void main(String[] args) {
+        Creator creator = new ConcreteCreator();
+        creator.createProduct(ConcreteProduct1.class);
+        //...
+    }
 }

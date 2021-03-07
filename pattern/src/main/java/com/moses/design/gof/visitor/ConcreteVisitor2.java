@@ -9,11 +9,10 @@
 package com.moses.design.gof.visitor;
 
 /**
+ * @author adamjwh
  * @ClassName: ConcreteVisitor2
  * @Description: 具体访问者2
- * @author adamjwh
  * @date 2018年7月29日
- *
  */
 public class ConcreteVisitor2 extends Visitor {
     @Override

@@ -12,11 +12,10 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
 /**
+ * @author adamjwh
  * @ClassName: BusinessHandler
  * @Description: 动态代理类
- * @author adamjwh
  * @date 2018年8月9日
- *
  */
 public class BusinessHandler implements InvocationHandler {
     private IBusiness iBusiness;

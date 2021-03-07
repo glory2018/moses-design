@@ -1,7 +1,7 @@
 /**
  * @Title: Client.java
  * @Package com.adamjwh.gof.interpreter
- * @Description: 
+ * @Description:
  * @author adamjwh
  * @date 2018年7月27日
  * @version V1.0
@@ -19,19 +19,15 @@ import java.util.List;
  *
  */
 public class Client {
-	
-	public static void main(String[] args) {
-		Context context = new Context();
-		List<AbstractExpression> list = new ArrayList<>();
-		
-		list.add(new TerminalExpression());
-		list.add(new NonterminalExpression());
-		list.add(new TerminalExpression());
-		list.add(new TerminalExpression());
-		
-		for (AbstractExpression abstractExpression : list) {
-			abstractExpression.Interpret(context);
-		}
-	}
-
+    public static void main(String[] args) {
+        Context context = new Context();
+        List<AbstractExpression> list = new ArrayList<>();
+        list.add(new TerminalExpression());
+        list.add(new NonterminalExpression());
+        list.add(new TerminalExpression());
+        list.add(new TerminalExpression());
+        for (AbstractExpression abstractExpression : list) {
+            abstractExpression.Interpret(context);
+        }
+    }
 }

@@ -9,11 +9,10 @@
 package com.moses.design.gof.memento;
 
 /**
+ * @author adamjwh
  * @ClassName: Client
  * @Description: 备忘录模式
- * @author adamjwh
  * @date 2018年7月31日
- *
  */
 public class Client {
     public static void main(String[] args) {

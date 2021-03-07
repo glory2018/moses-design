@@ -2,17 +2,17 @@ package com.moses.design.gofex.adapter;
 
 /**
  * 球员
- * @author adamjwh
  *
+ * @author adamjwh
  */
 public abstract class Player {
+    protected String name;
 
-	protected String name;
-	
-	public Player(String name) {
-		this.name = name;
-	}
+    public Player(String name) {
+        this.name = name;
+    }
 
-	public abstract void attack();	//进攻
-	public abstract void defense();	//防守
+    public abstract void attack();    //进攻
+
+    public abstract void defense();    //防守
 }

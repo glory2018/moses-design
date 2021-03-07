@@ -1,7 +1,7 @@
 /**
  * @Title: Request.java
  * @Package com.adamjwh.gof.chain_of_responsibility
- * @Description: 
+ * @Description:
  * @author adamjwh
  * @date 2018年7月27日
  * @version V1.0
@@ -16,10 +16,8 @@ package com.moses.design.gof.chain_of_responsibility;
  *
  */
 public class Request {
-	
-	//请求的等级
-	public Level getRequestLevel() {
-		return null;
-	}
-	
+    //请求的等级
+    public Level getRequestLevel() {
+        return null;
+    }
 }

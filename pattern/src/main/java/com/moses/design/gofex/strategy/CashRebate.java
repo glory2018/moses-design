@@ -1,7 +1,7 @@
 /**
  * @Title: CashRebate.java
  * @Package com.adamjwh.gofex.strategy
- * @Description: 
+ * @Description:
  * @author adamjwh
  * @date 2018年7月30日
  * @version V1.0
@@ -16,16 +16,14 @@ package com.moses.design.gofex.strategy;
  *
  */
 public class CashRebate extends CashSuper {
-	
-	private double moneyRebate = 1;	//折扣
-	
-	public CashRebate(double moneyRebate) {
-		this.moneyRebate = moneyRebate;
-	}
+    private double moneyRebate = 1;    //折扣
 
-	@Override
-	public double acceptCash(double money) {
-		return money * moneyRebate;
-	}
+    public CashRebate(double moneyRebate) {
+        this.moneyRebate = moneyRebate;
+    }
 
+    @Override
+    public double acceptCash(double money) {
+        return money * moneyRebate;
+    }
 }

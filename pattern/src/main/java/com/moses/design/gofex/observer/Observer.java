@@ -1,7 +1,7 @@
 /**
  * @Title: Observer.java
  * @Package com.adamjwh.gofex.observer
- * @Description: 
+ * @Description:
  * @author adamjwh
  * @date 2018年5月28日
  * @version V1.0
@@ -16,15 +16,13 @@ package com.moses.design.gofex.observer;
  *
  */
 public abstract class Observer {
+    protected String name;
+    protected Subject subject;
 
-	protected String name;
-	protected Subject subject;
-	
-	public Observer(String name, Subject subject) {
-		this.name = name;
-		this.subject = subject;
-	}
-	
-	public abstract void update();
-	
+    public Observer(String name, Subject subject) {
+        this.name = name;
+        this.subject = subject;
+    }
+
+    public abstract void update();
 }

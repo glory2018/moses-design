@@ -9,11 +9,10 @@
 package com.moses.design.gof.strategy;
 
 /**
+ * @author adamjwh
  * @ClassName: Client
  * @Description: 策略模式
- * @author adamjwh
  * @date 2018年7月30日
- *
  */
 public class Client {
     public static void main(String[] args) {

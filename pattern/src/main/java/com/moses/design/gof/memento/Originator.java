@@ -9,11 +9,10 @@
 package com.moses.design.gof.memento;
 
 /**
+ * @author adamjwh
  * @ClassName: Originator
  * @Description: 发起人角色
- * @author adamjwh
  * @date 2018年7月31日
- *
  */
 public class Originator {
     private String state;

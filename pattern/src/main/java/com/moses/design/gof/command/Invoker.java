@@ -9,11 +9,10 @@
 package com.moses.design.gof.command;
 
 /**
+ * @author adamjwh
  * @ClassName: Invoker
  * @Description: 调用者角色
- * @author adamjwh
  * @date 2018年5月30日
- *
  */
 public class Invoker {
     private Command command;

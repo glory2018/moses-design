@@ -9,11 +9,10 @@
 package com.moses.design.gof.mediator;
 
 /**
+ * @author adamjwh
  * @ClassName: ConcreteColleague1
  * @Description: 具体同事对象
- * @author adamjwh
  * @date 2018年7月28日
- *
  */
 public class ConcreteColleague1 extends Colleague {
     public ConcreteColleague1(Mediator mediator) {

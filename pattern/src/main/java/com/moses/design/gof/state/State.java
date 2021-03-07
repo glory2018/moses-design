@@ -9,11 +9,10 @@
 package com.moses.design.gof.state;
 
 /**
+ * @author adamjwh
  * @ClassName: State
  * @Description: 抽象状态角色
- * @author adamjwh
  * @date 2018年5月30日
- *
  */
 public abstract class State {
     protected Context context;

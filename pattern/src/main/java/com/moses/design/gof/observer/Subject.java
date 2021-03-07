@@ -11,11 +11,10 @@ package com.moses.design.gof.observer;
 import java.util.Vector;
 
 /**
+ * @author adamjwh
  * @ClassName: Subject
  * @Description: 被观察者
- * @author adamjwh
  * @date 2018年5月28日
- *
  */
 public class Subject {
     //观察者数组

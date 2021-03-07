@@ -11,11 +11,10 @@ package com.moses.design.gof.proxy.cglib_proxy;
 import org.springframework.cglib.proxy.Enhancer;
 
 /**
+ * @author adamjwh
  * @ClassName: Client
  * @Description: 代理模式——Cglib代理
- * @author adamjwh
  * @date 2018年8月9日
- *
  */
 public class Client {
     public static void main(String[] args) {

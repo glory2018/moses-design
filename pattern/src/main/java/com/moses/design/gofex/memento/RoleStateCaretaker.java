@@ -1,7 +1,7 @@
 /**
  * @Title: RoleStateCaretaker.java
  * @Package com.adamjwh.gofex.memento
- * @Description: 
+ * @Description:
  * @author adamjwh
  * @date 2018年7月31日
  * @version V1.0
@@ -16,15 +16,13 @@ package com.moses.design.gofex.memento;
  *
  */
 public class RoleStateCaretaker {
-	
-	private RoleStateMemento memento;
+    private RoleStateMemento memento;
 
-	public RoleStateMemento getMemento() {
-		return memento;
-	}
+    public RoleStateMemento getMemento() {
+        return memento;
+    }
 
-	public void setMemento(RoleStateMemento memento) {
-		this.memento = memento;
-	}
-
+    public void setMemento(RoleStateMemento memento) {
+        this.memento = memento;
+    }
 }

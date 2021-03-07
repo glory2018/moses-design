@@ -9,11 +9,10 @@
 package com.moses.design.gof.command;
 
 /**
+ * @author adamjwh
  * @ClassName: Client
  * @Description: 命令模式
- * @author adamjwh
  * @date 2018年5月30日
- *
  */
 public class Client {
     public static void main(String[] args) {

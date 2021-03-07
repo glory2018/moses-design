@@ -9,11 +9,10 @@
 package com.moses.design.gof.iterator;
 
 /**
+ * @author adamjwh
  * @ClassName: Client
  * @Description: 迭代器模式
- * @author adamjwh
  * @date 2018年7月31日
- *
  */
 public class Client {
     public static void main(String[] args) {

@@ -2,14 +2,12 @@ package com.moses.design.gof.singleton;
 
 /**
  * 枚举
- * @author adamjwh
  *
+ * @author adamjwh
  */
 public enum Singleton5 {
+    instance;
 
-	instance;
-	
-	public static void dosomething() {
-	}
-	
+    public static void dosomething() {
+    }
 }

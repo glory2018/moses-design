@@ -9,11 +9,10 @@
 package com.moses.design.gof.visitor;
 
 /**
+ * @author adamjwh
  * @ClassName: Client
  * @Description: 访问者模式
- * @author adamjwh
  * @date 2018年7月29日
- *
  */
 public class Client {
     public static void main(String[] args) {

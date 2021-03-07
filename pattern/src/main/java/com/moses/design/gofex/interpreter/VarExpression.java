@@ -1,7 +1,7 @@
 /**
  * @Title: VarExpression.java
  * @Package com.adamjwh.gofex.interpreter
- * @Description: 
+ * @Description:
  * @author adamjwh
  * @date 2018年7月28日
  * @version V1.0
@@ -18,16 +18,14 @@ import java.util.HashMap;
  *
  */
 public class VarExpression extends Expression {
-	
-	private String key;
-	
-	public VarExpression(String key) {
-		this.key = key;
-	}
+    private String key;
 
-	@Override
-	public int interpreter(HashMap<String, Integer> var) {
-		return var.get(this.key);
-	}
+    public VarExpression(String key) {
+        this.key = key;
+    }
 
+    @Override
+    public int interpreter(HashMap<String, Integer> var) {
+        return var.get(this.key);
+    }
 }

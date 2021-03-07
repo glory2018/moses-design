@@ -2,14 +2,12 @@ package com.moses.design.gofex.builder;
 
 /**
  * 纸盒包装
- * @author adamjwh
  *
+ * @author adamjwh
  */
 public class Wrapper implements Packing {
-
-	@Override
-	public String getPack() {
-		return "纸盒";
-	}
-
+    @Override
+    public String getPack() {
+        return "纸盒";
+    }
 }

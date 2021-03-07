@@ -2,14 +2,12 @@ package com.moses.design.gofex.bridge;
 
 /**
  * 手机品牌A
- * @author adamjwh
  *
+ * @author adamjwh
  */
 public class HandsetBrandA extends HandsetBrand {
-
-	@Override
-	public void run() {
-		soft.run();
-	}
-	
+    @Override
+    public void run() {
+        soft.run();
+    }
 }

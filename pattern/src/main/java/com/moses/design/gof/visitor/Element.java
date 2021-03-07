@@ -9,11 +9,10 @@
 package com.moses.design.gof.visitor;
 
 /**
+ * @author adamjwh
  * @ClassName: Element
  * @Description: 抽象元素
- * @author adamjwh
  * @date 2018年7月29日
- *
  */
 public abstract class Element {
     public abstract void accept(Visitor visitor);

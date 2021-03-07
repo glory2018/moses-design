@@ -9,11 +9,10 @@
 package com.moses.design.gof.proxy.dynamic_proxy;
 
 /**
+ * @author adamjwh
  * @ClassName: Business
  * @Description: 具体实现类/被代理的对象
- * @author adamjwh
  * @date 2018年8月9日
- *
  */
 public class Business implements IBusiness {
     @Override

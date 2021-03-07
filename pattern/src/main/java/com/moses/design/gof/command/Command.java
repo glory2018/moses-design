@@ -9,11 +9,10 @@
 package com.moses.design.gof.command;
 
 /**
+ * @author adamjwh
  * @ClassName: Command
  * @Description: 命令角色
- * @author adamjwh
  * @date 2018年5月30日
- *
  */
 public abstract class Command {
     protected Receiver receiver;

@@ -9,11 +9,10 @@
 package com.moses.design.gof.state;
 
 /**
+ * @author adamjwh
  * @ClassName: Context
  * @Description: 环境角色
- * @author adamjwh
  * @date 2018年5月30日
- *
  */
 public class Context {
     //定义状态

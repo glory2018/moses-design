@@ -1,7 +1,7 @@
 /**
  * @Title: Man.java
  * @Package com.adamjwh.gofex.visitor
- * @Description: 
+ * @Description:
  * @author adamjwh
  * @date 2018年7月29日
  * @version V1.0
@@ -16,10 +16,8 @@ package com.moses.design.gofex.visitor;
  *
  */
 public class Man extends Person {
-
-	@Override
-	public void accept(Action action) {
-		action.getManConclusion(this);
-	}
-
+    @Override
+    public void accept(Action action) {
+        action.getManConclusion(this);
+    }
 }

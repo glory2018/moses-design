@@ -9,11 +9,10 @@
 package com.moses.design.gof.iterator;
 
 /**
+ * @author adamjwh
  * @ClassName: Aggregate
  * @Description: 抽象容器
- * @author adamjwh
  * @date 2018年7月31日
- *
  */
 public interface Aggregate {
     public void add(Object object);

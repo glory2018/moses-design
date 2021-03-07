@@ -2,14 +2,12 @@ package com.moses.design.gofex.factory_method;
 
 /**
  * 减法工厂
- * @author adamjwh
  *
+ * @author adamjwh
  */
 public class SubFactory implements IFactory {
-
-	@Override
-	public Operation createOperation() {
-		return new OperationSub();
-	}
-
+    @Override
+    public Operation createOperation() {
+        return new OperationSub();
+    }
 }

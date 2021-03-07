@@ -1,7 +1,7 @@
 /**
  * @Title: Request.java
  * @Package com.adamjwh.gofex.chain_of_responsibility
- * @Description: 
+ * @Description:
  * @author adamjwh
  * @date 2018年7月27日
  * @version V1.0
@@ -16,33 +16,31 @@ package com.moses.design.gofex.chain_of_responsibility;
  *
  */
 public class Request {
-	
-	private String requestType;	//申请类别
-	private String requestContent;	//申请内容
-	private int number;	//数量
+    private String requestType;    //申请类别
+    private String requestContent;    //申请内容
+    private int number;    //数量
 
-	public String getRequestType() {
-		return requestType;
-	}
+    public String getRequestType() {
+        return requestType;
+    }
 
-	public void setRequestType(String requestType) {
-		this.requestType = requestType;
-	}
+    public void setRequestType(String requestType) {
+        this.requestType = requestType;
+    }
 
-	public String getRequestContent() {
-		return requestContent;
-	}
+    public String getRequestContent() {
+        return requestContent;
+    }
 
-	public void setRequestContent(String requestContent) {
-		this.requestContent = requestContent;
-	}
+    public void setRequestContent(String requestContent) {
+        this.requestContent = requestContent;
+    }
 
-	public int getNumber() {
-		return number;
-	}
+    public int getNumber() {
+        return number;
+    }
 
-	public void setNumber(int number) {
-		this.number = number;
-	}
-	
+    public void setNumber(int number) {
+        this.number = number;
+    }
 }

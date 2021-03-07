@@ -1,7 +1,7 @@
 /**
  * @Title: Client.java
  * @Package com.adamjwh.gofex.mediator
- * @Description: 
+ * @Description:
  * @author adamjwh
  * @date 2018年7月28日
  * @version V1.0
@@ -16,19 +16,13 @@ package com.moses.design.gofex.mediator;
  *
  */
 public class Client {
-
-	public static void main(String[] args) {
-		
-		UnitedNationsSecurityCouncil UNSC = new UnitedNationsSecurityCouncil();
-		
-		USA usa = new USA(UNSC);
-		Iraq iraq = new Iraq(UNSC);
-		
-		UNSC.setUsa(usa);
-		UNSC.setIraq(iraq);
-		
-		usa.declare("不准研制核武器");
-		iraq.declare("我们没有核武器");
-	}
-
+    public static void main(String[] args) {
+        UnitedNationsSecurityCouncil UNSC = new UnitedNationsSecurityCouncil();
+        USA usa = new USA(UNSC);
+        Iraq iraq = new Iraq(UNSC);
+        UNSC.setUsa(usa);
+        UNSC.setIraq(iraq);
+        usa.declare("不准研制核武器");
+        iraq.declare("我们没有核武器");
+    }
 }

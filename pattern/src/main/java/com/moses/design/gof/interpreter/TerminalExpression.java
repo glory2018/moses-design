@@ -1,7 +1,7 @@
 /**
  * @Title: TerminalExpression.java
  * @Package com.adamjwh.gof.interpreter
- * @Description: 
+ * @Description:
  * @author adamjwh
  * @date 2018年7月27日
  * @version V1.0
@@ -16,10 +16,8 @@ package com.moses.design.gof.interpreter;
  *
  */
 public class TerminalExpression extends AbstractExpression {
-
-	@Override
-	public void Interpret(Context context) {
-		System.out.println("终端解释器");
-	}
-
+    @Override
+    public void Interpret(Context context) {
+        System.out.println("终端解释器");
+    }
 }

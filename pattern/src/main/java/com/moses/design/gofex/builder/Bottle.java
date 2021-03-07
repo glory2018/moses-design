@@ -2,14 +2,12 @@ package com.moses.design.gofex.builder;
 
 /**
  * 纸杯包装
- * @author adamjwh
  *
+ * @author adamjwh
  */
 public class Bottle implements Packing {
-
-	@Override
-	public String getPack() {
-		return "纸杯";
-	}
-
+    @Override
+    public String getPack() {
+        return "纸杯";
+    }
 }

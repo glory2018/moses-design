@@ -9,11 +9,10 @@
 package com.moses.design.gof.proxy.static_proxy;
 
 /**
+ * @author adamjwh
  * @ClassName: UserDao
  * @Description: 具体目标类/被代理对象
- * @author adamjwh
  * @date 2018年8月9日
- *
  */
 public class UserDao implements IUserDao {
     @Override

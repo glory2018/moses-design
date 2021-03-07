@@ -2,13 +2,11 @@ package com.moses.design.gof.prototype;
 
 /**
  * 具体原型类
- * @author adamjwh
  *
+ * @author adamjwh
  */
 public class ConcretePrototype extends Prototype {
-
-	public ConcretePrototype(String id) {
-		super(id);
-	}
-	
+    public ConcretePrototype(String id) {
+        super(id);
+    }
 }

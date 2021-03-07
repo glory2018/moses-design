@@ -1,7 +1,7 @@
 /**
  * @Title: Client.java
  * @Package com.adamjwh.gof.templatemethod
- * @Description: 
+ * @Description:
  * @author adamjwh
  * @date 2018年5月29日
  * @version V1.0
@@ -16,15 +16,11 @@ package com.moses.design.gof.templatemethod;
  *
  */
 public class Client {
-
-	public static void main(String[] args) {
-		AbstractClass abstractClass;
-		
-		abstractClass = new ConcreteClassA();
-		abstractClass.TemplateMethod();
-		
-		abstractClass = new ConcreteClassB();
-		abstractClass.TemplateMethod();
-	}
-	
+    public static void main(String[] args) {
+        AbstractClass abstractClass;
+        abstractClass = new ConcreteClassA();
+        abstractClass.TemplateMethod();
+        abstractClass = new ConcreteClassB();
+        abstractClass.TemplateMethod();
+    }
 }

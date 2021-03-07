@@ -1,7 +1,7 @@
 /**
  * @Title: LiftState.java
  * @Package com.adamjwh.gofex.state
- * @Description: 
+ * @Description:
  * @author adamjwh
  * @date 2018年5月30日
  * @version V1.0
@@ -16,20 +16,21 @@ package com.moses.design.gofex.state;
  *
  */
 public abstract class LiftState {
+    protected Context context;
 
-	protected Context context;
-	
-	public void setContext(Context context) {
-		this.context = context;
-	}
-	
-	//电梯门开启动作
-	public abstract void open();
-	//电梯门关闭动作
-	public abstract void close();
-	//电梯运行
-	public abstract void run();
-	//电梯停止
-	public abstract void stop();
-	
+    public void setContext(Context context) {
+        this.context = context;
+    }
+
+    //电梯门开启动作
+    public abstract void open();
+
+    //电梯门关闭动作
+    public abstract void close();
+
+    //电梯运行
+    public abstract void run();
+
+    //电梯停止
+    public abstract void stop();
 }

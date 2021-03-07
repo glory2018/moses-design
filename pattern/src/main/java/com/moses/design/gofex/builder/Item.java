@@ -2,16 +2,16 @@ package com.moses.design.gofex.builder;
 
 /**
  * 食物条目
- * @author adamjwh
  *
+ * @author adamjwh
  */
 public interface Item {
+    //获取食物名称
+    public String getName();
 
-	//获取食物名称
-	public String getName();
-	//获取包装
-	public Packing packing();
-	//获取价格
-	public float getPrice();
-	
+    //获取包装
+    public Packing packing();
+
+    //获取价格
+    public float getPrice();
 }

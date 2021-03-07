@@ -9,11 +9,10 @@
 package com.moses.design.gof.state;
 
 /**
+ * @author adamjwh
  * @ClassName: ConcreteState2
  * @Description: 抽象状态角色
- * @author adamjwh
  * @date 2018年5月30日
- *
  */
 public class ConcreteState2 extends State {
     @Override

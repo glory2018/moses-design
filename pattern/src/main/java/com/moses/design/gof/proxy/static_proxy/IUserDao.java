@@ -9,11 +9,10 @@
 package com.moses.design.gof.proxy.static_proxy;
 
 /**
+ * @author adamjwh
  * @ClassName: IUserDao
  * @Description: 抽象目标类/接口
- * @author adamjwh
  * @date 2018年8月9日
- *
  */
 public interface IUserDao {
     public void save();

@@ -9,11 +9,10 @@
 package com.moses.design.gof.mediator;
 
 /**
+ * @author adamjwh
  * @ClassName: Client
  * @Description: 中介者模式
- * @author adamjwh
  * @date 2018年7月28日
- *
  */
 public class Client {
     public static void main(String[] args) {
